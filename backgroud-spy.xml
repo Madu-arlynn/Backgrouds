@@ -22,7 +22,7 @@
 				<li><strong>Equipment:</strong> A set of thieves' tools, a dagger, a small mirror, a small crumpled note containing stolen secrets (battle plans, blackmail material, or coordinates to an unknown place), a set of common clothes, and a belt pouch containing 15 gp.</li>
 			</ul>
 
-			<div element="ID_HMBR_BACKGROUND_FEATURE_ECHO_OF_THE_GREAT_GAME">
+			<div element="ID_HMBR_BACKGROUND_FEATURE_ECHO_OF_THE_GREAT_GAME" />
 
 			<h5>SUGGESTED CHARACTERISTICS</h5>
 			<p>Spies are masters of deception, secrecy, and subtlety. Constantly living behind false identities and hidden motives has shaped the way they see the world. Trust is difficult to earn, secrets are valuable currency, and every stranger may be either an ally or an enemy.</p>
