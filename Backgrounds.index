@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Homebrew Backgrounds</name>
+		<update version="0.0.1">
+			<file name="backgrounds.index" url="https://raw.githubusercontent.com/Madu-arlynn/Backgrouds/main/backgrounds.index" />
+		</update>
+	</info>
+
+	<files>
+
+		<file name="background-spy.xml" url="https://raw.githubusercontent.com/Madu-arlynn/Backgrouds/main/backgrounds/background-spy.xml" />
+
+	</files>
+</index>
