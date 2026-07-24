@@ -5,83 +5,78 @@
 		<description>Spy Background</description>
 		<author>Homebrew</author>
 		<update version="0.0.1">
-			<file name="background-spy.xml" url="https://github.com/Madu-arlynn/Backgrouds/blob/main/backgroud-spy.xml"/>
+			<file name="background-spy.xml" url="https://example.com/background-spy.xml" />
 		</update>
 	</info>
 
-	<element name="Spy" type="Background" source="Homebrew" id="ID_BACKGROUND_HOMEBREW_SPY">
+	<element name="Spy" type="Background" source="Homebrew" id="ID_HMBR_BACKGROUND_SPY">
 		<description>
 			<p>At some point or another you secretly gathered information on a group of people or maybe one person. Maybe you were hired by a rival or political enemy, maybe you were searching for military information to help the opposing army, maybe you were trying to fulfil your own agenda, but regardless you are good at finding things and hiding your true self. You are used to living on the edge of danger, and doubly used to doubting people's intentions.</p>
 
 			<p class="indent">Who did you spy for, yourself or some benefactor? Who or what did you spy on? What secrets did you uncover? Why did you stop? Or did you?</p>
 
 			<ul class="unstyled">
-				<li><strong>Skill Proficiencies:</strong> Choose three from Acrobatics, Deception, Perception, Sleight of Hand, or Stealth</li>
+				<li><strong>Skill Proficiencies:</strong> Choose three from Acrobatics, Deception, Perception, Sleight of Hand, and Stealth</li>
 				<li><strong>Tool Proficiencies:</strong> Thieves' Tools, Forgery Kit, Disguise Kit</li>
 				<li><strong>Languages:</strong> Thieves' Cant, one language of your choice</li>
-				<li><strong>Equipment:</strong> A set of thieves' tools, a dagger, a small mirror, a crumpled note containing stolen secrets (battle plans, blackmail material, or coordinates to an unknown place), a set of common clothes, and a pouch containing 15 gp.</li>
+				<li><strong>Equipment:</strong> A set of thieves' tools, a dagger, a small mirror, a small crumpled note containing stolen secrets (battle plans, blackmail material, or coordinates to an unknown place), a set of common clothes, and a belt pouch containing 15 gp.</li>
 			</ul>
 
-			<div element="ID_BACKGROUND_FEATURE_HOMEBREW_ECHO_OF_THE_GREAT_GAME"/>
+			<div element="ID_HMBR_BACKGROUND_FEATURE_ECHO_OF_THE_GREAT_GAME" />
 
 			<h5>SUGGESTED CHARACTERISTICS</h5>
-			<p>Spies live in a world of lies, hidden identities, and dangerous secrets. Their experiences shape how they interact with others and how much they trust those around them.</p>
+			<p>Spies are masters of deception, secrecy, and subtlety. Constantly living behind false identities and hidden motives has shaped the way they see the world. Trust is difficult to earn, secrets are valuable currency, and every stranger may be either an ally or an enemy.</p>
 		</description>
 
 		<setters>
-			<set name="short">3 Skills, Thieves' Tools, Forgery Kit, Disguise Kit, Thieves' Cant</set>
+			<set name="sourceUrl">Homebrew</set>
 		</setters>
 
 		<rules>
 
-			<select name="Skill Proficiency" type="Proficiency" number="3">
-				<option id="ID_PROFICIENCY_SKILL_ACROBATICS"/>
-				<option id="ID_PROFICIENCY_SKILL_DECEPTION"/>
-				<option id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
-				<option id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
-				<option id="ID_PROFICIENCY_SKILL_STEALTH"/>
-			</select>
-
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT"/>
-
-			<grant type="Language" id="ID_LANGUAGE_THIEVES_CANT"/>
-
 			<select
-				type="Language"
-				name="Language"
-				supports="Language"/>
+				type="Proficiency"
+				number="3"
+				supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+
+			<grant type="Language" id="ID_LANGUAGE_THIEVES_CANT" />
+			<select type="Language" name="Language (Spy)" number="1" />
 
 			<grant
 				type="Background Feature"
-				id="ID_BACKGROUND_FEATURE_HOMEBREW_ECHO_OF_THE_GREAT_GAME"
-				requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+				id="ID_HMBR_BACKGROUND_FEATURE_ECHO_OF_THE_GREAT_GAME"
+				requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
 
 			<select
 				type="Background Feature"
 				name="Variant Feature"
 				supports="Optional Background Feature"
-				optional="true"/>
+				optional="true" />
 
 		</rules>
+
 	</element>
 
 	<element
 		name="Feature: Echo of the Great Game"
 		type="Background Feature"
 		source="Homebrew"
-		id="ID_BACKGROUND_FEATURE_HOMEBREW_ECHO_OF_THE_GREAT_GAME">
+		id="ID_HMBR_BACKGROUND_FEATURE_ECHO_OF_THE_GREAT_GAME">
 
 		<supports>Background Feature</supports>
 
 		<description>
-			<p>Years of stealth and trickery have taught you how to avoid drawing attention to yourself. The way you walk, talk, and move are deliberately ordinary and forgettable. While you are wearing clothes appropriate to the area you are in, people are unable to remember your face or any distinguishing features unless they deliberately make an effort to do so.</p>
+			<p>Years of stealth and trickery have taught you how to avoid drawing attention to yourself. The way you walk, talk, and move are deliberately ordinary and forgettable. While you are wearing clothes appropriate to the area you are in, people rarely remember your face or any distinguishing features unless they deliberately make an effort to do so.</p>
 
-			<p>Additionally, you know how to write in a special coded script that can only be understood by those trained to decipher it.</p>
+			<p>Additionally, you know how to write in a special coded script that can only be understood by individuals trained to decipher it.</p>
 		</description>
 
-		<sheet alt="Echo of the Great Game"/>
+		<sheet alt="Echo of the Great Game" />
+
 	</element>
 
 </elements>
