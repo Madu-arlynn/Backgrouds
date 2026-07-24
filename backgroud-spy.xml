@@ -29,7 +29,7 @@
 		</description>
 
 		<setters>
-			<set name="sourceUrl">Homebrew</set>
+			<set name="sourceUrl">https://github.com/Madu-arlynn</set>
 		</setters>
 
 		<rules>
