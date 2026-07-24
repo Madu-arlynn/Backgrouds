@@ -5,7 +5,7 @@
 		<description>Spy Background</description>
 		<author>Homebrew</author>
 		<update version="0.0.1">
-			<file name="background-spy.xml" url="https://github.com/Madu-arlynn/Backgrouds/blob/main/backgroud-spy.xml" />
+			<file name="background-spy.xml" url="https://raw.githubusercontent.com/Madu-arlynn/Backgrouds/main/backgrounds/background-spy.xml" />
 		</update>
 	</info>
 
