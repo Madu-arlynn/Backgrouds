@@ -5,7 +5,7 @@
 		<description>Spy Background</description>
 		<author>Homebrew</author>
 		<update version="0.0.1">
-			<file name="background-spy.xml" url="https://example.com/background-spy.xml"/>
+			<file name="background-spy.xml" url="backgroud-spy.xml"/>
 		</update>
 	</info>
 
